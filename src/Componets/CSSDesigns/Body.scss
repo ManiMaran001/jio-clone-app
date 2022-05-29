@@ -1,0 +1,102 @@
+/*SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.container--box {
+    margin-top: 48px;
+}
+
+.header--secondary {
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -1.2px;
+    font-size: 2.4rem;
+}
+
+.Recharge--box {
+    width: 100%;
+    height: 100%;
+    background-color: #e7ebf8 !important;
+    border-radius: 20px !important;
+    box-shadow: none !important;
+}
+
+.Recharge--inner {
+    padding: 20px 17px!important;
+}
+
+.Recharge--header .Plan{
+    color: #fff;
+    background-color: #0c5273;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -1px;
+    padding: 5px;
+    border-radius: 5px;
+}
+.Recharge--header h3{
+    font-weight: 900;
+    font-size: 2.5rem;
+    letter-spacing: -1px;
+    margin-top: 12px;
+}
+.Recharge--header p{
+    font-weight: 700;
+    font-size: 1rem;
+    margin-top: 16px;
+}
+.app-images{
+    margin-top: 36px;
+    margin-bottom: 16px;
+}
+.app-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.app-images span{
+    font-size: 14px;
+    color:rgba(0, 0, 0, 0.65);
+}
+.valid--container{
+    margin-top: 16px;
+}
+.valid-box{
+    margin-right: 96px;
+}
+.valid--box1{
+    color:rgba(0, 0, 0, 0.65);
+    font-size: 14px;
+}
+.valid--box2{
+    font-weight: 900;
+    font-size: 1rem;
+}
+.footer--chip{
+    padding:25px 35px !important;
+   background-color:#0f3cc9 !important;
+   color:#fff !important;
+   font-size: 16px !important;
+   font-weight: 700 !important;
+}
+.Recharge--footer{
+    margin-top: 12px;
+}
+.Recharge--footer p{
+    margin-top:12px;
+    color: #0a2885;;
+}
+.card--desc{
+    height:60px;
+}
+.chip--container {
+    background-color:"";
+    border-radius: 50px;
+    padding:10px 0px;
+    border:1px solid #0a2885;;
+    display: flex;
+    justify-content: center;
+    color:#0a2885;
+    margin-bottom: 10px;
+    font-weight: 700;
+ }
+ 
