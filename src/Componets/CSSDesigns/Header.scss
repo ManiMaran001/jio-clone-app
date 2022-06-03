@@ -147,7 +147,7 @@
     // }
 
     .container--spacing {
-        padding: 10px 2rem;
+        padding: 16px 2rem;
     }
 
     .hidden {
@@ -164,7 +164,7 @@
         align-items: center;
     }
     .sidebar{
-        width: 320px !important;
+        width: 100% !important;
     }
 
     .m--screen--view {
@@ -218,7 +218,7 @@
         display: none !important;
     }
     .sidebar{
-        width: 768px;
+        width: 400px !important;
     }
 
     .second--nav--hidden {
