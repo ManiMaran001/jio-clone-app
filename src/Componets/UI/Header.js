@@ -139,10 +139,8 @@ const Header = (props) => {
                 <div className='header mobile--view'>
                     <div className='d-flex gap-3 align-items-center'>
                         <div>
-                           <AiOutlineMenu className="header-icon"/>
+                           <AiOutlineMenu className="header-icon"  onClick={handleClick}/>
                         </div>
-                      
-          <Button onClick={handleClick}>open</Button>
           <Drawer
             anchor={'left'}
             open={anchorEl}
