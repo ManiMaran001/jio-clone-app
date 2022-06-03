@@ -163,6 +163,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    .sidebar{
+        width: 320px !important;
+    }
 
     .m--screen--view {
         display: none !important;
@@ -214,6 +217,9 @@
     .hidden {
         display: none !important;
     }
+    .sidebar{
+        width: 768px;
+    }
 
     .second--nav--hidden {
         display: none !important;
@@ -230,7 +236,9 @@
     .hidden {
         display: flex !important;
     }
-
+    .sidebar{
+        width: 0px;
+    }
     .second--nav--hidden {
         display: flex !important;
     }
@@ -267,3 +275,9 @@
 .footer--section{
     background-color: #f5f5f5;
 }
+
+.sidebar{
+    width: 769px;
+}
+
+
