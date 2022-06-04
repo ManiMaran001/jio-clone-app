@@ -2,17 +2,28 @@ import React, { useState, useEffect } from 'react'
 import '../CSSDesigns/Header.scss'
 import jiosvg from '../../Assert/svg/jio.svg'
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
-import {RiArrowLeftSLine} from 'react-icons/ri'
+import { RiArrowLeftSLine } from 'react-icons/ri'
 import { BsCartFill, BsFillCartFill } from 'react-icons/bs'
 import { MdLiveHelp } from 'react-icons/md'
 import { HiUserCircle } from 'react-icons/hi'
 import CustomDrawer from './CustomDrawer';
-import { Menu,MenuItem} from '@mui/material';
+import { Menu, MenuItem, Modal, Typography, Box } from '@mui/material';
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: 400,
+  bgcolor: 'background.paper',
+  border: '2px solid #000',
+  boxShadow: 24,
+  p: 4,
+};
 const Header = (props) => {
   const [mobile, setMobile] = useState(false)
   const [openDrawer, setDrawer] = useState(false);
   const [openSearchModal, setSearchModal] = useState(false)
-  const [openModal,setOpenModal]=useState(false)
+  const [openModal, setOpenModal] = useState(false)
   const handleClick = () => {
     setDrawer(true)
   };
@@ -44,25 +55,13 @@ const Header = (props) => {
   const handleSearchModal = () => {
     setSearchModal(!openSearchModal)
   }
-  const headerOpenModal=()=>{
+  const headerOpenModal = () => {
     setOpenModal(true)
-    setSearchModal(false)
   }
-  const handleCloseModal=()=>{
+  const handleCloseModal = () => {
     setOpenModal(false)
     setSearchModal(false)
   }
-  const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
   return (
     <div>
       {
@@ -74,6 +73,19 @@ const Header = (props) => {
                 <input className="header-input--modal" placeholder='search' onClick={headerOpenModal} />
               </>
             </div>
+            <Modal
+              open={openModal}
+              onClose={handleCloseModal}
+            >
+              <Box sx={style}>
+                <Typography id="modal-modal-title" variant="h6" component="h2">
+                  Text in a modal
+                </Typography>
+                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                  Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+                </Typography>
+              </Box>
+            </Modal>
           </div>
         ) : (
           <>
@@ -96,8 +108,8 @@ const Header = (props) => {
                     </div>
                     <div className='header--search m--screen--view'>
                       <>
-                        <AiOutlineSearch className='header-icon'  onClick={handleSearchModal} />
-                        <input className="header-input" placeholder='search' onClick={headerOpenModal} />
+                        <AiOutlineSearch className='header-icon' onClick={handleSearchModal} />
+                        <input className="header-input" placeholder='search' onClick={handleSearchModal} />
                       </>
                     </div>
                     <div>

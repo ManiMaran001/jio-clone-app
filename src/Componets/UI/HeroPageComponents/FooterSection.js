@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, Box } from '@mui/material'
 import { AiFillInstagram, AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import { BsFacebook } from 'react-icons/bs'
+import '../../CSSDesigns/Footer.scss'
 
 const allFooter =
 {
@@ -47,7 +48,7 @@ const FooterSection = () => {
             <Grid container>
                 <Grid item xs={12} sm={12} md={12} lg={12}>
                     <Grid container>
-                        <Grid item xs={9}>
+                        <Grid item xs={9} className="desktop--view">
                             <Grid container>
                                 <Grid item xs={3}>
                                     <h6 className='font-black text-base leading-6 tracking-tighter'>our offerings</h6>
@@ -108,18 +109,18 @@ const FooterSection = () => {
                             </Grid>
                         </Grid>
                         <Grid item xs={12} sm={12} md={3} lg={3} xl={3}>
-                            <h4 className="font-black text-2xl tracking-tighter">Connect with us</h4>
-                            <div className="flex">
-                                <span><AiFillInstagram /></span>
-                                <span><AiFillTwitterCircle /></span>
-                                <span><BsFacebook /></span>
-                                <span><AiFillYoutube /></span>
-                                <span><AiFillLinkedin /></span>
+                            <h4 className="font-black text-2xl tracking-tighter mb-3">Connect with us</h4>
+                            <div className="flex mb-3 gap-4">
+                                <span className="rounded-full bg-brand-thick p-2"><AiFillInstagram className="text-white text-md" /></span>
+                                <span className="rounded-full bg-brand-thick p-2"><AiFillTwitterCircle className="text-white text-md" /></span>
+                                <span className="rounded-full bg-brand-thick p-2"><BsFacebook className="text-white text-md" /></span>
+                                <span className="rounded-full bg-brand-thick p-2"><AiFillYoutube className="text-white text-md" /></span>
+                                <span className="rounded-full bg-brand-thick p-2"><AiFillLinkedin className="text-white text-md" /></span>
                             </div>
-                            <h4 className="font-black text-2xl tracking-tighter">Download MyJio</h4>
-                            <div className='d-flex flex-column'>
-                                <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg"/>
-                                <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg"/>
+                            <h4 className="font-black text-2xl tracking-tighter  mb-3">Download MyJio</h4>
+                            <div className='flex flex-col gap-3 sm:flex-row md:flex-row lg:flex-row xl:flex-row '>
+                                <img className="h-10 " src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg" />
+                                <img className="h-10 " src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg" />
                             </div>
                         </Grid>
                     </Grid>

@@ -14,7 +14,7 @@ const App = () => {
         <Header/>
       </header>
       <main>
-        <div className='container container--spacing'>
+        <div className='container'>
           <div>
           <CarouselComponent/>
           </div>

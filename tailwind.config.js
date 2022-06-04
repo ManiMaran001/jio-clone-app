@@ -10,7 +10,8 @@ module.exports = {
         "brand-amber": "#FF8656",
         "brand-red": "#FF5656",
         "brand-gray": "#7E7E7E",
-        "brand-light":"#e7ebf8"
+        "brand-light":"#e7ebf8",
+        "brand-thick":"#0f3cc9"
       },
       textColor: {
                 'primary-blue':'#0a2885',

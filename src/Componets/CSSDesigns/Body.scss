@@ -21,10 +21,10 @@
 }
 
 .Recharge--inner {
-    padding: 20px 17px!important;
+    padding: 20px 17px !important;
 }
 
-.Recharge--header .Plan{
+.Recharge--header .Plan {
     color: #fff;
     background-color: #0c5273;
     font-weight: 700;
@@ -33,93 +33,120 @@
     padding: 5px;
     border-radius: 5px;
 }
-.Recharge--header h3{
+
+.Recharge--header h3 {
     font-weight: 900;
     font-size: 2.5rem;
     letter-spacing: -1px;
     margin-top: 12px;
 }
-.Recharge--header p{
+
+.Recharge--header p {
     font-weight: 700;
     font-size: 1rem;
     margin-top: 16px;
 }
-.app-images{
+
+.app-images {
     margin-top: 36px;
     margin-bottom: 16px;
 }
-.app-img{
+
+.app-img {
     width: 40px;
     height: 40px;
     margin-right: 10px;
 }
-.app-images span{
+
+.app-images span {
     font-size: 14px;
-    color:rgba(0, 0, 0, 0.65);
+    color: rgba(0, 0, 0, 0.65);
 }
-.valid--container{
+
+.valid--container {
     margin-top: 16px;
 }
-.valid-box{
+
+.valid-box {
     margin-right: 96px;
 }
-.valid--box1{
-    color:rgba(0, 0, 0, 0.65);
+
+.valid--box1 {
+    color: rgba(0, 0, 0, 0.65);
     font-size: 14px;
 }
-.valid--box2{
+
+.valid--box2 {
     font-weight: 900;
     font-size: 1rem;
 }
-.footer--chip{
-    padding:25px 35px !important;
-   background-color:#0f3cc9 !important;
-   color:#fff !important;
-   font-size: 16px !important;
-   font-weight: 700 !important;
+
+.footer--chip {
+    padding: 25px 35px !important;
+    background-color: #0f3cc9 !important;
+    color: #fff !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
 }
-.Recharge--footer{
+
+.Recharge--footer {
     margin-top: 12px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 55px;
 }
-.Recharge--footer p{
-    margin-top:12px;
-    color: #0a2885;;
+
+.Recharge--footer p {
+    margin-top: 12px;
+    color: #0a2885;
+    ;
 }
-.card--desc{
-    height:60px;
+
+.card--desc {
+    height: 60px;
 }
+
 .chip--container {
-    background-color:"";
+    background-color: "";
     border-radius: 50px;
-    padding:10px 0px;
-    border:1px solid #0a2885;;
+    padding: 10px 0px;
+    border: 1px solid #0a2885;
+    ;
     display: flex;
     justify-content: center;
-    color:#0a2885;
+    color: #0a2885;
     margin-bottom: 10px;
     font-weight: 700;
- }
- 
+}
 
- @media screen and (max-width:600px){
-    .Recharge--footer{
+
+@media screen and (max-width:600px) {
+    .Recharge--footer {
         margin-top: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:0px
-    }   
- }
- @media screen and (min-width:1024px){
-    .Recharge--footer{
+        gap: 0px
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .Recharge--footer {
         margin-top: 12px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:0px
-    }   
- }
+        gap: 0px
+    }
+}
+
+@media screen and (min-width:1140px) {
+    .Recharge--footer {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 55px
+    }
+}

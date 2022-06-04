@@ -9,43 +9,62 @@ const CarouselComponent = () => {
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div className='image-container'>
-              <div className='carousel--box d-flex'>
-                <div className="carousel--header">
-                  <h1>Watch live T20 matches with Jio Cricket plans, starting at ₹333</h1>
-                  <p className='carousel-header-p'>check plans</p>
-                </div>
-                <div className="carousel--image">
-                  <img src="https://www.jio.com/jio.com%20creative%20for%20ipl%202022-min.jpg" class="d-block w-100" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div className='image-container'>
-              <div className='carousel--box d-flex'>
-                <div className="carousel--header">
-                  <h1>Exchange any 4G phone to buy a JioPhone Next for only ₹4499</h1>
-                  <p className='carousel-header-p'>Explore the exchange offer</p>
-                </div>
-                <div className="carousel--image">
-                  <img src="https://www.jio.com/dhoni_mobile.png" class="d-block w-100" alt="" />
+              <div className="carousel--box">
+                <div className="row">
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--header">
+                      <h1>Watch live T20 matches with Jio Cricket plans, starting at ₹333</h1>
+                      <p className='carousel-header-p'>check plans</p>
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--image">
+                      <img src="https://www.jio.com/jio.com%20creative%20for%20ipl%202022-min.jpg" class="d-block w-100" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div className='image-container'>
-              <div className='carousel--box d-flex'>
-                <div className="carousel--header">
-                  <h1>Enjoy 365 days of benefits with recharge of ₹2999</h1>
-                  <p className='carousel-header-p'>Get it now</p>
-                </div>
-                <div className="carousel--image">
-                  <img src="https://www.jio.com/mobile-hmpg-365-days-benefit-mob-min.jpg" class="d-block w-100" alt="" />
+              <div className="carousel--box">
+                <div className="row">
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--header">
+                    <h1>Exchange any 4G phone to buy a JioPhone Next for only ₹4499</h1>
+                      <p className='carousel-header-p'>check plans</p>
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--image">
+                    <img src="https://www.jio.com/dhoni_mobile.png" class="d-block w-100" alt="" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="carousel-item">
+            <div className='image-container'>
+              <div className="carousel--box">
+                <div className="row">
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--header">
+                    <h1>Enjoy 365 days of benefits with recharge of ₹2999</h1>
+                      <p className='carousel-header-p'>check plans</p>
+                    </div>
+                  </div>
+                  <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                    <div className="carousel--image">
+                    <img src="https://www.jio.com/mobile-hmpg-365-days-benefit-mob-min.jpg" class="d-block w-100" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         
         </div>
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -54,7 +73,7 @@ const CarouselComponent = () => {
         </div>
       </div>
       <div>
-        <Box>
+        <Box className="container--spacing">
           <Grid container>
             <Grid item xs={12}>
               <Grid container>
@@ -63,8 +82,8 @@ const CarouselComponent = () => {
                 <Grid xs={12} md={12} lg={6} xl={12}>
                   <Grid container justifyContent="space-between">
                     <Grid item xs={12}>
-                      <Grid container spacing={2} justifyContent="space-between"> 
-                      <Grid xs={12} lg={1}>
+                      <Grid container spacing={2} justifyContent="space-between">
+                        <Grid xs={12} lg={1}>
                         </Grid>
                         <Grid xs={12} lg={2.5}>
                           <div className="chip--container">
@@ -101,3 +120,4 @@ const CarouselComponent = () => {
   )
 }
 export default CarouselComponent
+
