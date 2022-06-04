@@ -104,7 +104,7 @@ const BodyComponent = () => {
                                                             </div>
                                                         </div>
                                                         <Divider className="divider" />
-                                                        <div className="d-flex gap-5 valid--container">
+                                                        <div className="d-flex gap-sm-2 gap-lg-3 gap-xl-5 gap-md-5 valid--container">
                                                             <div className='d-flex flex-column valid-box'>
                                                                 <span className='valid--box1'>
                                                                     Validity
@@ -122,7 +122,7 @@ const BodyComponent = () => {
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <div className="Recharge--footer d-flex align-items-center gap-5">
+                                                        <div className="Recharge--footer">
                                                             <div>
                                                                 <Chip label="Recharge" outlined className="footer--chip" />
                                                             </div>

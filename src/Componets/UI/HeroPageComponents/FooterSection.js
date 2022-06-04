@@ -117,7 +117,7 @@ const FooterSection = () => {
                                 <span><AiFillLinkedin /></span>
                             </div>
                             <h4 className="font-black text-2xl tracking-tighter">Download MyJio</h4>
-                            <div className='flex'>
+                            <div className='d-flex flex-column'>
                                 <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/G-Play.svg"/>
                                 <img src="https://jep-asset.akamaized.net/jio/svg/android-ios-logo/AppStore.svg"/>
                             </div>
