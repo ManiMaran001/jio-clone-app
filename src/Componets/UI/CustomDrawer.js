@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AddIcon from '@mui/icons-material/Add';
 import { AiOutlineMinus } from 'react-icons/ai'
-import { Box, Drawer, Button, List, Divider, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
+import { Box, Drawer, Button, List,Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
 
 const AccordionData = [
   { id: 1, Title: "Mobile", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-1" },
