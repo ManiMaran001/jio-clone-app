@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import { Grid, Box, Drawer, Button, List, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
+import { Grid,Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
 import { AiFillInstagram, AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import { BsFacebook } from 'react-icons/bs'
-import '../../CSSDesigns/Footer.scss'
-import jiosvg from '../../../Assert/svg/jio.svg'
+import "./Footer.scss"
 import AddIcon from '@mui/icons-material/Add';
 import { AiOutlineMinus } from 'react-icons/ai'
+const jiosvg=require('../../../Assert/svg/jio.svg')
 const AccordionData = [
     { id: 1, Title: "Mobile", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-1" },
     { id: 2, Title: "JioFiber", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get JioFiber" }, { id: 6, list: "Pay Bills" }, { id: 6, list: "Services" }], PanelType: "panel-2" },
@@ -50,9 +50,9 @@ const allFooter =
 }
 
 const FooterSection = () => {
-    const [expand, setExpand] = useState("" || false)
+    const [expand, setExpand] = useState<string|boolean>(""||false)
     const handleChange =
-        (panel) => (event, Expanded) => {
+        (panel:string) => (event:React.SyntheticEvent,Expanded:boolean) => {
             setExpand(Expanded ? panel : false);
         };
     console.log(allFooter.support)
@@ -130,7 +130,7 @@ const FooterSection = () => {
                                                 <Accordion
                                                     onChange={handleChange(item.PanelType)}
                                                     expanded={expand === item.PanelType}
-                                                    sx={{ p: 2 ,backgroundColor:"#f5f5f5",boxShadow:"0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%)!important"}}
+                                                    sx={{ p: 2, backgroundColor: "#f5f5f5", boxShadow: "0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%)!important" }}
                                                 >
                                                     <AccordionSummary
                                                         expandIcon={expand === item.PanelType ? <AiOutlineMinus /> : <AddIcon />}

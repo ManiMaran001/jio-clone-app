@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import '../CSSDesigns/Header.scss'
-import jiosvg from '../../Assert/svg/jio.svg'
+import './Header.scss'
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { RiArrowLeftSLine } from 'react-icons/ri'
 import { BsCartFill, BsFillCartFill } from 'react-icons/bs'
 import { MdLiveHelp } from 'react-icons/md'
 import { HiUserCircle } from 'react-icons/hi'
-import CustomDrawer from './CustomDrawer';
+import CustomDrawer from '../../CustomComponentModel/CustomDrawer';
 import { Menu, MenuItem, Modal, Typography, Box } from '@mui/material';
+const jiosvg=require('../../../Assert/svg/jio.svg')
 const style = {
   position: 'absolute',
   top: '50%',
@@ -20,7 +20,7 @@ const style = {
   p: 4,
 };
 
-const Header = (props) => {
+const Header = (props:any) => {
   const [mobile, setMobile] = useState(false)
   const [openDrawer, setDrawer] = useState(false);
   const [openSearchModal, setSearchModal] = useState(false)
@@ -45,14 +45,14 @@ const Header = (props) => {
 
   console.log("screenwidth", [window.screen.width, mobile])
   let screenwidth = window.screen.width
-  const resize = () => {
-    if (window.screen.width <= 768) {
-      setMobile(true)
-    }
-  }
-  useEffect(() => {
-    window.addEventListener("resize", resize());
-  }, [])
+  // const resize = () => {
+  //   if (window.screen.width <= 768) {
+  //     setMobile(true)
+  //   }
+  // }
+  // useEffect(() => {
+  //   window.addEventListener("resize", resize());
+  // }, [])
   const handleSearchModal = () => {
     setSearchModal(!openSearchModal)
   }

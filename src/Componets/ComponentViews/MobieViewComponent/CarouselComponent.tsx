@@ -1,13 +1,13 @@
 import React from 'react'
-import '..//../CSSDesigns/Header.scss'
-import { Chip, Stack, Box, Grid } from '@mui/material'
+import '../HeaderViewComponent/Header.scss'
+import { Box, Grid } from '@mui/material'
 
 const CarouselComponent = () => {
   return (
     <div>
-      <div id="carouselExampleControls" class="carousel slide mt-4" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+      <div id="carouselExampleControls" className="carousel slide mt-4" data-bs-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
             <div className='image-container'>
               <div className="carousel--box">
                 <div className="row">
@@ -19,14 +19,14 @@ const CarouselComponent = () => {
                   </div>
                   <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div className="carousel--image">
-                      <img src="https://www.jio.com/jio.com%20creative%20for%20ipl%202022-min.jpg" class="d-block w-100" alt="" />
+                      <img src="https://www.jio.com/jio.com%20creative%20for%20ipl%202022-min.jpg" className="d-block w-100" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className='image-container'>
               <div className="carousel--box">
                 <div className="row">
@@ -38,14 +38,14 @@ const CarouselComponent = () => {
                   </div>
                   <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div className="carousel--image">
-                    <img src="https://www.jio.com/dhoni_mobile.png" class="d-block w-100" alt="" />
+                    <img src="https://www.jio.com/dhoni_mobile.png" className="d-block w-100" alt="" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
+          <div className="carousel-item">
             <div className='image-container'>
               <div className="carousel--box">
                 <div className="row">
@@ -57,7 +57,7 @@ const CarouselComponent = () => {
                   </div>
                   <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <div className="carousel--image">
-                    <img src="https://www.jio.com/mobile-hmpg-365-days-benefit-mob-min.jpg" class="d-block w-100" alt="" />
+                    <img src="https://www.jio.com/mobile-hmpg-365-days-benefit-mob-min.jpg" className="d-block w-100" alt="" />
                     </div>
                   </div>
                 </div>
@@ -66,8 +66,8 @@ const CarouselComponent = () => {
           </div>
          
         </div>
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>

@@ -1,16 +1,12 @@
 import React from 'react'
-import '../../CSSDesigns/Body.scss'
+import './Body.scss'
 import { Grid, Box, Paper, Divider, Chip } from '@mui/material'
-import JiophoneImg from '../../../Assert/img/jiophone-next.png'
-import watchImg from '../../../Assert/img/watch-series.png'
-import TeamsImg from '../../../Assert/img/MicrosoftTeams.png'
-import jioCinema from '../../../Assert/img/jiocinema.jpg'
-import jioApp from '../../../Assert/img/myjio.png'
-import jioSaavn from '../../../Assert/img/jiosaavn.png'
-import partnerBanner from '../../../Assert/img/Partners-banner.png'
-import styleBannner from '../../../Assert/img/style-banner.jpg'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+const JiophoneImg=require('../../../Assert/img/jiophone-next.png')
+const watchImg=require('../../../Assert/img/watch-series.png')
+const TeamsImg=require( '../../../Assert/img/MicrosoftTeams.png')
+const jioCinema=require('../../../Assert/img/jiocinema.jpg')
+const jioApp=require('../../../Assert/img/myjio.png')
+const jioSaavn=require('../../../Assert/img/jiosaavn.png')
 
 const data = [
     {
@@ -77,7 +73,7 @@ const AppsData = [
 
 
 
-const BodyComponent = () => {
+const MobileBodyComponent = () => {
     return (
         <div className="container--box">
             <h3 className='header--secondary'>Recharge for unlimited experiences</h3>
@@ -124,7 +120,7 @@ const BodyComponent = () => {
                                                         </div>
                                                         <div className="Recharge--footer">
                                                             <div>
-                                                                <Chip label="Recharge" outlined className="footer--chip" />
+                                                                <Chip variant="outlined" className="footer--chip" label="Recharge" />
                                                             </div>
                                                             <div>
                                                                 <p>View details</p>
@@ -153,12 +149,12 @@ const BodyComponent = () => {
 
             <div>
                 <h3 className="mt-16 text-4xl font-black  tracking-tighter">Best-selling devices at the best prices</h3>
-                <div class="mt-8 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
+                <div className="mt-8 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
                     {
                         miniProduct.map((item) => {
                             return (
                                 <div key={item.id}>
-                                    <div class="max-w-sm rounded overflow-hidden  shadow-md p-3">
+                                    <div className="max-w-sm rounded overflow-hidden  shadow-md p-3">
                                         <div className='h-4'>
                                             {item.id === "1" && (<span className="pt-8 font-extrabold text-sm tracking-tighter text-white bg-brand-blue p-1">EXCHANGE TO UPGRADE</span>)}
                                         </div>
@@ -186,11 +182,11 @@ const BodyComponent = () => {
 
             <div>
                 <h3 className="mt-16 text-4xl font-black  tracking-tighter">Enrich your digital life with Jio apps</h3>
-                <div class="mt-8 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
+                <div className="mt-8 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
                     {
                         AppsData.map((item) => {
                             return (
-                                <div class="max-w-sm rounded-default overflow-hidden  shadow-md p-0" key={item.id}>
+                                <div className="max-w-sm rounded-default overflow-hidden  shadow-md p-0" key={item.id}>
                                     <img className='rounded-l-default rounded-r-default' src={item.HeroImg} alt="jio app" />
                                     <div className="p-3">
                                         <div className='w-full flex gap-4 items-center'>
@@ -230,7 +226,7 @@ const BodyComponent = () => {
         </div>
     )
 }
-export default BodyComponent
+export default MobileBodyComponent
 
 /*
 <Grid container >
