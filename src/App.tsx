@@ -11,8 +11,6 @@ const App = () => {
       <header>
         <Header/>
       </header>
-      <div>
-        </div>
       <main>
         <div className='container'>
           <div>
