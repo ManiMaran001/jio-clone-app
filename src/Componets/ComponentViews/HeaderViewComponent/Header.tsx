@@ -1,13 +1,15 @@
-import React, { useState, useEffect } from 'react'
+/* eslint-disable jsx-a11y/alt-text */
+import React, { useState } from 'react'
 import './Header.scss'
 import { AiOutlineSearch, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { RiArrowLeftSLine } from 'react-icons/ri'
-import { BsCartFill, BsFillCartFill } from 'react-icons/bs'
+import { BsCartFill } from 'react-icons/bs'
 import { MdLiveHelp } from 'react-icons/md'
 import { HiUserCircle } from 'react-icons/hi'
 import CustomDrawer from '../../CustomComponentModel/CustomDrawer';
-import { Menu, MenuItem, Modal, Typography, Box } from '@mui/material';
-const jiosvg=require('../../../Assert/svg/jio.svg')
+import { Modal, Typography, Box } from '@mui/material';
+import { useNavigate } from 'react-router-dom'
+const jiosvg = require('../../../Assert/svg/jio.svg') as string
 const style = {
   position: 'absolute',
   top: '50%',
@@ -20,11 +22,12 @@ const style = {
   p: 4,
 };
 
-const Header = (props:any) => {
+const Header = (props: any) => {
   const [mobile, setMobile] = useState(false)
   const [openDrawer, setDrawer] = useState(false);
   const [openSearchModal, setSearchModal] = useState(false)
   const [openModal, setOpenModal] = useState(false)
+  let navigate = useNavigate()
   const handleClick = () => {
     setDrawer(true)
   };
@@ -122,9 +125,9 @@ const Header = (props:any) => {
                   <div className='header-left d-flex align-items-center'>
                     <div className='d-flex gap-md-3 gap-xl-5 gap-xxl-5 align-items-center'>
                       <div >
-                        <img src={jiosvg} />
+                        <img src={jiosvg} onClick={() => navigate("/")} />
                       </div>
-                      <div >
+                      <div onClick={() => navigate("/MobilePage")}>
                         Mobile
                       </div>
                       <div>
