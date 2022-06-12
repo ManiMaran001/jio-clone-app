@@ -8,7 +8,7 @@ import { MdLiveHelp } from 'react-icons/md'
 import { HiUserCircle } from 'react-icons/hi'
 import CustomDrawer from '../../CustomComponentModel/CustomDrawer';
 import { Modal, Typography, Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 const jiosvg = require('../../../Assert/svg/jio.svg') as string
 const style = {
   position: 'absolute',
@@ -28,6 +28,7 @@ const Header = (props: any) => {
   const [openSearchModal, setSearchModal] = useState(false)
   const [openModal, setOpenModal] = useState(false)
   let navigate = useNavigate()
+  let location=useLocation()
   const handleClick = () => {
     setDrawer(true)
   };
@@ -169,7 +170,9 @@ const Header = (props: any) => {
                   </div>
                 </div>
               </div>
-              <div className='container--spacing mini-container-bg header-li second--nav--hidden'>
+              {
+                location.pathname!=="/" && (
+                  <div className='container--spacing mini-container-bg header-li second--nav--hidden'>
                 <div className='d-flex gap-5'>
                   <div className='mini-li'>
                     <span>Discover</span>
@@ -191,6 +194,8 @@ const Header = (props: any) => {
                   </div>
                 </div>
               </div>
+                )
+              }
             </div>
           </>
         )

@@ -11,12 +11,16 @@ module.exports = {
         "brand-red": "#FF5656",
         "brand-gray": "#7E7E7E",
         "brand-light":"#e7ebf8",
-        "brand-thick":"#0f3cc9"
+        "brand-thick":"#0f3cc9",
+        "brand-blu":"#1144e4",
+        "brand-white":"#fff",
+        "brand-gr":"rgba(255, 255, 255, 0.31)"
       },
       textColor: {
                 'primary-blue':'#0a2885',
                'secondary': '#ffed4a',
                'danger': '#e3342f',
+               "primary-grey":"rgba(255, 255, 255, 0.78)"
       },
       borderRadius: {
         'none': '0',
