@@ -225,7 +225,7 @@ const HomePage = () => {
         <div className="col-start-3 col-span-4">
           <div className="grid grid-cols-2 gap-4 gap-lg-3 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
             <div className="w-20 rounded-full bg-brand-light p-2">
-              <img src={Recharge} alt="recharge" />
+              <img src={Recharge} alt="recharge " />
             </div>
             <div className="w-20 rounded-full bg-brand-light p-2">
               <img src={Paybills} alt="recharge" />
