@@ -1,17 +1,12 @@
 import React, { useState } from 'react'
-import { Grid,Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
+import { Grid, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
 import { AiFillInstagram, AiFillTwitterCircle, AiFillYoutube, AiFillLinkedin } from 'react-icons/ai'
 import { BsFacebook } from 'react-icons/bs'
 import "./Footer.scss"
 import AddIcon from '@mui/icons-material/Add';
 import { AiOutlineMinus } from 'react-icons/ai'
-const jiosvg=require('../../../Assert/svg/jio.svg')
-const AccordionData = [
-    { id: 1, Title: "Mobile", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-1" },
-    { id: 2, Title: "JioFiber", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get JioFiber" }, { id: 6, list: "Pay Bills" }, { id: 6, list: "Services" }], PanelType: "panel-2" },
-    { id: 3, Title: "Business", MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Services" }, { id: 3, list: "Enquire" }, { id: 4, list: "JioBusiness Solution" }, { id: 5, list: "Resources" }, { id: 6, list: "Contact us" }], PanelType: "panel-3" },
-    { id: 4, Title: "Smartphone", MiniList: [{ id: 1, list: "Smart Devices" }, { id: 2, list: "Accessories" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-4" },
-]
+import { useNavigate } from 'react-router-dom'
+import jiosvg from '../../../Assert/svg/jio.svg'
 const allFooter =
 {
     offerings: ["Prepaid",
@@ -50,9 +45,16 @@ const allFooter =
 }
 
 const FooterSection = () => {
-    const [expand, setExpand] = useState<string|boolean>(""||false)
+    const [expand, setExpand] = useState<string | boolean>("" || false)
+    let navigate = useNavigate();
+    const AccordionData = [
+        { id: 1, Title: <Typography onClick={() => navigate("/MobilePage")}>Our offerings</Typography>, MiniList: [{ id: 1, list: "Mobile" }, { id: 2, list: "Fiber" }, { id: 3, list: "Business" }, { id: 4, list: "Apps" }, { id: 5, list: "Shop" }], PanelType: "panel-1" },
+        { id: 2, Title: <Typography onClick={() => navigate("/MobilePage")}>Support</Typography>, MiniList: [{ id: 1, list: "Explore Support" }, { id: 2, list: "Locate us" }, { id: 3, list: "FAQ" }, { id: 4, list: "Track order" }, { id: 5, list: "Contact us" }], PanelType: "panel-2" },
+        { id: 3, Title: <Typography onClick={() => navigate("/MobilePage")}>Our company</Typography>, MiniList: [{ id: 1, list: "Reliance Indstries" }, { id: 2, list: "Reliance Foundation" }, { id: 3, list: "JioLife" }, { id: 4, list: "Careers" }, { id: 5, list: "Investor relations" }], PanelType: "panel-3" },
+        { id: 4, Title: <Typography onClick={() => navigate("/MobilePage")}>Useful links</Typography>, MiniList: [{ id: 1, list: "Get Jio Sim" }, { id: 2, list: "Get JioFiber" }, { id: 3, list: "Recharge" }, { id: 5, list: "Pay Bills" }, { id: 6, list: "Login" }], PanelType: "panel-4" },
+    ]
     const handleChange =
-        (panel:string) => (event:React.SyntheticEvent,Expanded:boolean) => {
+        (panel: string) => (event: React.SyntheticEvent, Expanded: boolean) => {
             setExpand(Expanded ? panel : false);
         };
     console.log(allFooter.support)
@@ -121,7 +123,7 @@ const FooterSection = () => {
                                 </Grid>
                             </Grid>
                         </Grid>
-                        <Grid item xs={12} sx={{ display: { xs: "flex !important", md: "none !important", lg: "none !important" } }}>
+                        <Grid item xs={12} sx={{ display: { xs: "flex !important", md: "none !important", lg: "none !important" }, p: "0px !important" }}>
                             <Grid container>
                                 {
                                     AccordionData?.map((item) => {
@@ -130,7 +132,7 @@ const FooterSection = () => {
                                                 <Accordion
                                                     onChange={handleChange(item.PanelType)}
                                                     expanded={expand === item.PanelType}
-                                                    sx={{ p: 2, backgroundColor: "#f5f5f5", boxShadow: "0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%)!important" }}
+                                                    sx={{ p: 2, backgroundColor: "", boxShadow: "0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%)!important" }}
                                                 >
                                                     <AccordionSummary
                                                         expandIcon={expand === item.PanelType ? <AiOutlineMinus /> : <AddIcon />}

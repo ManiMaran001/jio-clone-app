@@ -14,7 +14,8 @@ module.exports = {
         "brand-thick":"#0f3cc9",
         "brand-blu":"#1144e4",
         "brand-white":"#fff",
-        "brand-gr":"rgba(255, 255, 255, 0.31)"
+        "brand-gr":"rgba(255, 255, 255, 0.31)",
+        "brand-light":"#e7ebf8"
       },
       textColor: {
                 'primary-blue':'#0a2885',

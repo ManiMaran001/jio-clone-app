@@ -9,7 +9,9 @@ import { HiUserCircle } from 'react-icons/hi'
 import CustomDrawer from '../../CustomComponentModel/CustomDrawer';
 import { Modal, Typography, Box } from '@mui/material';
 import { useLocation, useNavigate } from 'react-router-dom'
-const jiosvg = require('../../../Assert/svg/jio.svg') as string
+import jiosvg from '../../../Assert/svg/jio.svg';
+
+//const jiosvg = require('../../../Assert/svg/jio.svg') as string
 const style = {
   position: 'absolute',
   top: '50%',
