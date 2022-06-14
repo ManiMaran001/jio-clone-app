@@ -223,24 +223,42 @@ const HomePage = () => {
       <div className="grid grid-cols-8 sm:grid-cols-2 md:grid-cols-8 lg:grid-cols-8 xl:grid-cols-8 grid-rows-1 mt-1 mb-1">
         <div className=""></div>
         <div className="col-start-3 col-span-4">
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-            <img src={Recharge} alt="recharge" />
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 ">
+            <div>
+              <div className="w-100">
+                <img src={Recharge} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <span>Recharge</span>
+              </div>
             </div>
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-              <img src={Paybills} alt="recharge" />
+            <div>
+              <div>
+                <img src={Paybills} alt="recharge"  className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <span>PayBills</span>
+              </div>
             </div>
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-              <img src={JioFiber} alt="recharge" />
+            <div>
+            <div className="w-100">
+                <img src={JioSim} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2" />
+                <span>Get Jio Sim</span>
             </div>
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-              <img src={JioSim} alt="recharge" />
             </div>
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-              <img src={Port} alt="recharge" />
+            <div>
+              <div>
+                <img src={JioFiber} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <span>Get JioFiber</span>
+              </div>
             </div>
-            <div className="w-16 h-100 rounded-full bg-brand-light p-2">
-              <img src={Support} alt="recharge" />
+            <div>
+              <div>
+                <img src={Port} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <span>Port to Jio</span>
+              </div>
+            </div>
+            <div>
+              <div >
+                <img src={Support} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                 <span>Support</span>
+              </div>
             </div>
           </div>
         </div>
