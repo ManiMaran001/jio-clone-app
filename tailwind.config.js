@@ -21,7 +21,8 @@ module.exports = {
                 'primary-blue':'#0a2885',
                'secondary': '#ffed4a',
                'danger': '#e3342f',
-               "primary-grey":"rgba(255, 255, 255, 0.78)"
+               "primary-grey":"rgba(255, 255, 255, 0.78)",
+               "primary-80-grey":"rgba(0, 0, 0, 0.65)"
       },
       borderRadius: {
         'none': '0',

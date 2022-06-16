@@ -106,7 +106,7 @@ const Header = (props: any) => {
                     <CustomDrawer openDrawer={openDrawer} closeDrawer={handleDrawerClose} />
 
                     <div>
-                      <img style={{ height: "26px" }} src={jiosvg} />
+                      <img style={{ height: "26px" }} src={jiosvg}  onClick={()=>navigate("/")}/>
                     </div>
                   </div>
                   <div className='d-flex align-items-center gap-3 '>

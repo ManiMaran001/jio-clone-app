@@ -226,44 +226,102 @@ const HomePage = () => {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-1 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6 ">
             <div>
               <div className="w-100">
-                <img src={Recharge} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <img
+                  src={Recharge}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
                 <span>Recharge</span>
               </div>
             </div>
             <div>
               <div>
-                <img src={Paybills} alt="recharge"  className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <img
+                  src={Paybills}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
                 <span>PayBills</span>
               </div>
             </div>
             <div>
-            <div className="w-100">
-                <img src={JioSim} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2" />
+              <div className="w-100">
+                <img
+                  src={JioSim}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
                 <span>Get Jio Sim</span>
-            </div>
+              </div>
             </div>
             <div>
               <div>
-                <img src={JioFiber} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <img
+                  src={JioFiber}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
                 <span>Get JioFiber</span>
               </div>
             </div>
             <div>
               <div>
-                <img src={Port} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
+                <img
+                  src={Port}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
                 <span>Port to Jio</span>
               </div>
             </div>
             <div>
-              <div >
-                <img src={Support} alt="recharge" className="w-16 h-100 rounded-full bg-brand-light p-2"/>
-                 <span>Support</span>
+              <div>
+                <img
+                  src={Support}
+                  alt="recharge"
+                  className="w-16 h-100 rounded-full bg-brand-light p-2"
+                />
+                <span>Support</span>
               </div>
             </div>
           </div>
         </div>
         <div className=""></div>
         <div className=""></div>
+      </div>
+
+      <div className="mt-4 container--spacing main--container">
+        <div className="container--box">
+          <h2 className=" text-4xl md:text-7xl lg:text-7xl xl:text-7xl  font-black tracking-tighter leading-4">
+            In the spotlight
+          </h2>
+          <p className="mt-4 md:mt-3 lg:mt-5 xl:mt-5 text-lg font-medium tracking-normal text-primary-80-grey">
+            The best deals, new launches, and top-selling products right now.
+          </p>
+        </div>
+      </div>
+
+      <div className="container--spacing mt-16">
+        <div className="col-sm-12 row">
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+            <div className="video--text">
+              <h2 className=" text-4xl md:text-4xl lg:text-7xl xl:text-7xl font-black tracking-tighter">
+                Say "Cheese!" India's favourite selfie phone is here
+              </h2>
+              <p className=" mt-2 text-lg font-medium tracking-normal text-primary-80-grey">
+                Get a JioPhone Next now for only ₹4499.
+              </p>
+              <button className="mt-3 px-3 py-3 font-bold rounded-full  bg-brand-blu text-white">
+                Explore Now
+              </button>
+            </div>
+          </div>
+          <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+          <video controls autoPlay={true} loop muted poster="">
+  <source src=" https://jep-asset.akamaized.net/jio/welcome-page/Unlimited-Entertainment-edit2.mp4 " type="video/mp4"/>
+</video>
+          </div>
+        </div>
       </div>
     </div>
   );
