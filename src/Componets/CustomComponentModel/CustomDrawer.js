@@ -9,7 +9,7 @@ const CustomDrawer = (props) => {
   const [expand, setExpand] = useState("" || false)
   let navigate = useNavigate()
   const AccordionData = [
-    { id: 1, Title: <Typography >Mobile</Typography>, MiniList: [{ id: 1, list:<span onClick={()=>navigate("/")}>Discover</span>}, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-1" },
+    { id: 1, Title: <Typography >Mobile</Typography>, MiniList: [{ id: 1, list:<span onClick={()=>navigate("/MobilePage")}>Discover</span>}, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-1" },
     { id: 2, Title: <Typography>JioFiber</Typography>, MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Prepaid" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get JioFiber" }, { id: 6, list: "Pay Bills" }, { id: 6, list: "Services" }], PanelType: "panel-2" },
     { id: 3, Title: <Typography >Business</Typography>, MiniList: [{ id: 1, list: "Discover" }, { id: 2, list: "Services" }, { id: 3, list: "Enquire" }, { id: 4, list: "JioBusiness Solution" }, { id: 5, list: "Resources" }, { id: 6, list: "Contact us" }], PanelType: "panel-3" },
   { id: 4, Title: <Typography>Shop</Typography>, MiniList: [{ id: 1, list: "Smart Devices" }, { id: 2, list: "Accessories" }, { id: 3, list: "Postpaid" }, { id: 4, list: "Recharge" }, { id: 5, list: "Get Jio SIM" }, { id: 6, list: "Pay Bills" }], PanelType: "panel-4" },

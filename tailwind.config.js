@@ -13,7 +13,7 @@ module.exports = {
         "brand-light":"#e7ebf8",
         "brand-thick":"#0f3cc9",
         "brand-blu":"#1144e4",
-        "brand-white":"#fff",
+        "brand-white":"#ffffff",
         "brand-gr":"rgba(255, 255, 255, 0.31)",
         "brand-light":"#e7ebf8"
       },

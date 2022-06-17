@@ -30,6 +30,30 @@
     justify-content: "center";
     align-items:"center";
 }
+.mini--cart{
+    background-color: #ffff;
+    font-size: 12px;
+    width:fit-content;
+    padding:4px 4px;
+    color:#0f3cc9;
+    font-weight: 900;
+    border-radius: 7px;
+}
+.mini--cart--para{
+    width:100%;
+    font-size: 2rem;
+    color:#fff;
+    font-weight: 900;
+}
+.mini--cart--btn{
+    width:fit-content;
+    border-radius: 10px;
+    padding: 4px 10px;
+    background-color: #9eb5fa;
+    color:#061951;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
 
 @media screen and(max-width:600px) {
     .Desktop--view {

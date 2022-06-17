@@ -13,6 +13,10 @@ const MicrosoftDesktop = require("../../../Assert/img/MicroSoftDesk.png");
 const GirlTablet = require("../../../Assert/img/girlTab.jpg");
 const teamsTablet = require("../../../Assert/img/heroTab.jpg");
 const MicrosoftTablet = require("../../../Assert/img/MicosoftTab.jpg");
+const vertical1 =require("../../../Assert/img/Vertical-3.png");
+const vertical2=require("../../../Assert/img/Vertical-2.png");
+const vertical3=require("../../../Assert/img/Vertical-1.png");
+
 const HomePage = () => {
   return (
     <div>
@@ -317,10 +321,83 @@ const HomePage = () => {
             </div>
           </div>
           <div className="col-sm-12 col-md-12 col-lg-12 col-xl-6">
-          <video controls autoPlay={true} loop muted poster="">
-  <source src=" https://jep-asset.akamaized.net/jio/welcome-page/Unlimited-Entertainment-edit2.mp4 " type="video/mp4"/>
-</video>
+            <video controls autoPlay={true} loop muted poster="">
+              <source
+                src=" https://jep-asset.akamaized.net/jio/welcome-page/Unlimited-Entertainment-edit2.mp4 "
+                type="video/mp4"
+              />
+            </video>
           </div>
+        </div>
+      </div>
+
+      <div className="container--spacing mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1">
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={vertical1}
+              alt="Sunset in the mountains"
+            />
+            <div className="bg-brand-thick">
+            <div className="px-6 py-4">
+              <div className="mini--cart">JIOMART</div>
+              <p className="mini--cart--para">
+                Buy groceries on the go
+              </p>
+              <p className="text-primary-grey pt-2 text-lg">
+                Lowest prices,free home delivery
+              </p>
+              <button className="mini--cart--btn mt-4">
+                Shop at JioMart
+              </button>
+            </div>
+            </div>
+          </div>
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={vertical3}
+              alt="Sunset in the mountains"
+            />
+            <div className="bg-brand-thick">
+            <div className="px-6 py-4">
+              <div className="mini--cart">FURNITURE & MORE</div>
+              <p className="mini--cart--para">
+               Best deals on furniture
+              </p>
+              <p className="text-primary-grey pt-2 text-lg">
+               upto 70% off at urban ladder
+              </p>
+              <button className="mini--cart--btn mt-4">
+                Start Shopping
+              </button>
+            </div>
+            </div>
+          </div>
+          <div className="max-w-sm rounded-md overflow-hidden shadow-lg">
+            <img
+              className="w-full"
+              src={vertical2}
+              alt="Sunset in the mountains"
+            />
+            <div className="bg-brand-thick">
+            <div className="px-6 py-4">
+              <div className="mini--cart">PARTNER BRANDS</div>
+              <p className="mini--cart--para">
+              Save on partner brands
+              </p>
+              <p className="text-primary-grey pt-2 text-lg">
+              Vouchers,cashbacks, and more
+              </p>
+              <button className="mini--cart--btn mt-4">
+                Check Partner Offers
+              </button>
+            </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
