@@ -15,7 +15,14 @@ module.exports = {
         "brand-blu":"#1144e4",
         "brand-white":"#ffffff",
         "brand-gr":"rgba(255, 255, 255, 0.31)",
-        "brand-light":"#e7ebf8"
+        "brand-light":"#e7ebf8",
+        "soft--bg":"rgba(89, 89, 89, 0.5)",
+        "brand-jio-saavn":"#7aebd9",
+        "brand-jio-games":"#10d974",
+        "brand-jio-mart":"#0078ad",
+        "brand-jio-cloud":"#0f3cc9",
+        "brand-jio-meet":"#fa7d19",
+        "brand-jio-news":"#0f3cc9"
       },
       textColor: {
                 'primary-blue':'#0a2885',
