@@ -13,7 +13,7 @@ import {
   Grid,
 } from "@mui/material";
 import Recharge from "../../../Assert/svg/recharge.svg";
-import JioRibbon from '../../../Assert/svg/jioRibbon.svg';
+import JioRibbon from "../../../Assert/svg/jioRibbon.svg";
 import Paybills from "../../../Assert/svg/paybills.svg";
 import JioFiber from "../../../Assert/svg/jiofiber.svg";
 import JioSim from "../../../Assert/svg/jiosim.svg";
@@ -26,8 +26,12 @@ import JioMart from "../../../Assert/svg/jioMart.svg";
 import JioNews from "../../../Assert/svg/jioNews.svg";
 import JioGames from "../../../Assert/svg/jioGames.svg";
 import MobileDesign from "../../../Assert/svg/MobileDesign.svg";
-import HomeDesign from '../../../Assert/svg/HomeDesign.svg';
-import JobDesign from '../../../Assert/svg/JobDesign.svg';
+import HomeDesign from "../../../Assert/svg/HomeDesign.svg";
+import JobDesign from "../../../Assert/svg/JobDesign.svg";
+const jioApp = require("../../../Assert/img/myjio.png");
+const JiophoneImg = require("../../../Assert/img/jiophone-next.png");
+const watchImg = require("../../../Assert/img/watch-series.png");
+const TeamsImg = require("../../../Assert/img/MicrosoftTeams.png");
 const GirlDesktop = require("../../../Assert/img/GirlDesk.jpg");
 const teamsDesktop = require("../../../Assert/img/heroDesk.jpg");
 const MicrosoftDesktop = require("../../../Assert/img/MicroSoftDesk.png");
@@ -37,7 +41,11 @@ const MicrosoftTablet = require("../../../Assert/img/MicosoftTab.jpg");
 const vertical1 = require("../../../Assert/img/Vertical-3.png");
 const vertical2 = require("../../../Assert/img/Vertical-2.png");
 const vertical3 = require("../../../Assert/img/Vertical-1.png");
-
+const superDesk = require("../../../Assert/img/Superdesk.png");
+const cardTree = require("../../../Assert/img/cardTree.png");
+const cardSun = require("../../../Assert/img/cardSun.png");
+const cardForest = require("../../../Assert/img/cardForest.png");
+const jioCareers = require("../../../Assert/img/jiocareers.png");
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -57,6 +65,54 @@ const responsive = {
     items: 1,
   },
 };
+const miniProduct = [
+  {
+    id: "1",
+    ProductName: "JioPhone Next",
+    ProductDescription: "At Rs. 4499 Under Exchange",
+    img: JiophoneImg,
+  },
+  {
+    id: "2",
+    ProductName: "Apple Watch Series 7",
+    ProductDescription: "From ₹41,900",
+    img: watchImg,
+  },
+  {
+    id: "3",
+    ProductName: "Apple iPhone 13",
+    ProductDescription: "From ₹79,900",
+    img: TeamsImg,
+  },
+];
+const AppsData = [
+  {
+    id: 1,
+    HeroImg: cardTree,
+    appName: "Transforming Jambale with Jio 4G",
+    appImg: "https://jep-asset.akamaized.net/jio/svg/logo/myjio-n.svg",
+    description:
+      "Here’s how Jio revolutionised seamless communication in a remote village.",
+    text: "Check now",
+  },
+  {
+    id: 2,
+    HeroImg: cardSun,
+    appName: "LIVE broadcast of Gangasagar Mela",
+    appImg: "https://jep-asset.akamaized.net/jio/svg/logo/jiocinema-n.svg",
+    description: "Online streaming of the pious event on the JioTV app 24*7.",
+    text: "Explore",
+  },
+  {
+    id: 3,
+    HeroImg: cardForest,
+    appName: "Introducing 4G network in Santalabari",
+    appImg: "https://jep-asset.akamaized.net/jio/svg/logo/jiosaavn-n.svg",
+    description:
+      "Redefining communication in the core forest with Jio’s digital initiative.",
+    text: "Find out more",
+  },
+];
 
 const HomePage = () => {
   const multiCarouselData = [
@@ -426,7 +482,7 @@ const HomePage = () => {
       </div>
       <div className="card--container--spacing mt-4">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-1">
-          <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg">
+          <div className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm rounded-2xl overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={vertical1}
@@ -447,7 +503,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg">
+          <div className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm  rounded-2xl overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={vertical3}
@@ -466,7 +522,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="max-w-sm rounded-2xl overflow-hidden shadow-lg">
+          <div className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm  rounded-2xl overflow-hidden shadow-lg">
             <img
               className="w-full"
               src={vertical2}
@@ -612,10 +668,10 @@ const HomePage = () => {
                   alt="mobile design"
                 />
                 <h3 className="font-black text-4xl tracking-tighter mt-2">
-                JioFiber
+                  JioFiber
                 </h3>
                 <p className="text-center mt-3 font-medium text-base text-primary-80-grey">
-                Connected living experiences with superfast home internet.
+                  Connected living experiences with superfast home internet.
                 </p>
                 <button className="px-3 py-2 mt-3 font-bold rounded-full bg-brand-blu text-white">
                   Know more
@@ -630,10 +686,11 @@ const HomePage = () => {
                   alt="mobile design"
                 />
                 <h3 className="font-black text-4xl tracking-tighter mt-2">
-                 Business
+                  Business
                 </h3>
                 <p className="text-center mt-3 font-medium text-base text-primary-80-grey">
-                Enterprise-grade digital services to meet all your business needs.
+                  Enterprise-grade digital services to meet all your business
+                  needs.
                 </p>
                 <button className="px-3 py-2 mt-3 font-bold rounded-full bg-brand-blu text-white">
                   Learn more
@@ -644,9 +701,178 @@ const HomePage = () => {
         </div>
       </div>
 
-
       <div className="col-12 mt-12">
-        <img src={JioRibbon} alt="jio-ribbon"/>
+        <img src={JioRibbon} alt="jio-ribbon" />
+      </div>
+
+      <div className="mt-4 container--spacing main--container">
+        <div className="container--box">
+          <h2 className="text-2xl md:text-7xl lg:text-7xl xl:text-7xl font-black tracking-tighter leading-8 leading-4">
+            Latest and trending devices
+          </h2>
+          <p className="mt-4 md:mt-3 lg:mt-5 xl:mt-5 text-lg font-medium tracking-normal text-primary-80-grey">
+            Get the best deals on all the latest devices on your wish list.
+          </p>
+        </div>
+      </div>
+
+      <div className="container--spacing">
+        <div className="mt-8 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
+          {miniProduct.map((item) => {
+            return (
+              <div key={item.id}>
+                <div className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm rounded overflow-hidden  shadow-md p-3">
+                  <div className="h-4">
+                    {item.id === "1" && (
+                      <span className="pt-8 font-extrabold text-sm tracking-tighter text-white bg-brand-blue p-1">
+                        EXCHANGE TO UPGRADE
+                      </span>
+                    )}
+                  </div>
+                  <div className="w-auto h-auto pt-8">
+                    <img src={item.img} alt="prodcut img" />
+                  </div>
+                  <p className="pt-6 font-bold tracking-normal text-black leading-6 text-base">
+                    {item.ProductName}
+                  </p>
+                  <p className=" pt-1 tracking-normal text-base leading-6 text-gray-500">
+                    {item.ProductDescription}
+                  </p>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+        <Grid container className="center--plan mt-4" justifyContent={"center"}>
+          <Grid item xs={8} sm={2} md={1.5} lg={1.5}>
+            <div className="chip--container">View all products</div>
+          </Grid>
+        </Grid>
+      </div>
+
+      <div className="container--spacing">
+        <div className="relative">
+          <img src={superDesk} alt="superDesk" className="rounded-2xl" />
+        </div>
+        <div className=""></div>
+      </div>
+
+      <div className="bg-primary-gray-20 container--spacing">
+        <div className="mt-4 container--spacing main--container">
+          <div className="container--box">
+            <h2 className="text-2xl md:text-7xl lg:text-7xl xl:text-7xl font-black tracking-tighter leading-8 leading-4">
+              Discover new possibilities
+            </h2>
+            <p className="mt-4 md:mt-3 lg:mt-5 xl:mt-5 text-lg font-medium tracking-normal text-primary-80-grey">
+              Planning a digital transformation for home, business, or personal
+              experiences? You're just a step away.
+            </p>
+          </div>
+        </div>
+        </div>
+        <div className="bg-primary-gray-20 container--spacing--discover">
+        <div className="mt-8 mb-5 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
+          {AppsData.map((item) => {
+            return (
+              <div
+                className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm rounded-default overflow-hidden  shadow-md p-0"
+                key={item.id}
+              >
+                <img
+                  className={`rounded-l-default rounded-r-default w-100`}
+                  src={item.HeroImg}
+                  alt="jio app"
+                />
+                <div className="p-3">
+                  <div className="w-full">
+                    <p className="font-black text-lg  font-extrabold leading-4 tracking-tighter">
+                      {item.appName}
+                    </p>
+                  </div>
+                  <p className="text-gray-600 text-base tracking-tighter leading-6 mt-2">
+                    {item.description}
+                  </p>
+                  <div className="mt-3">
+                    <div className="hover:bg-brand-light rounded-default">
+                      <p className="text-primary-blue font-bold text-base tracking-normal">
+                        {item.text}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      <div className="container--spacing">
+        <div className="image-container rounded-2xl mt-5">
+          <div className="carousel--box">
+            <div className="row">
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div className="carousel--header">
+                  <h1>Create your own opportunities with us</h1>
+                  <p
+                   className="carousel-header-p">
+                    Join our mission to digitally transform India.
+                  </p>
+                  <button className="mt-3 px-3 py-3 font-bold rounded-full bg-brand-blu text-primary-inverse">
+                    view job openings
+                  </button>
+                </div>
+              </div>
+              <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div className="carousel--image">
+                  <img
+                    src={jioCareers}
+                    className="d-block w-100 rounded-tr-2xl rounded-br-2xl"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-brand-secondary mt-5">
+        <div className="container--spacing pt-5 pb-5">
+          <div className="row">
+            <div className="col-sm-0 col-md-0 col-lg-2 col-xl-2"></div>
+            <div className="col-sm-12 col-md-12 col-lg-8 col-xl-8 ">
+              <div className="w-100">
+                <div className="">
+                  <div className="d-flex gap-2 align-items-center justify-content-center">
+                    <img
+                      src={
+                        "https://jep-asset.akamaized.net/jio/svg/logo/myjio-n.svg"
+                      }
+                      alt="app"
+                      className="w-12 h-12"
+                    />
+                    <h4 className="text-3xl font-black">MyJio</h4>
+                  </div>
+                  <div className="mt-3 d-flex flex-column justify-content-center">
+                    <h2 className="text-2xl md:text-7xl lg:text-7xl xl:text-7xl font-black leading-12 w-100 text-center">
+                      One app for everything Jio
+                    </h2>
+                    <p className="text-lg font-medium  mt-3 text-center text-primary-80-grey">
+                      Scan the QR code, download MyJio, and enjoy all the
+                      exciting Jio services in just one app.
+                    </p>
+                    <img
+                      src="https://jep-asset.akamaized.net/jiostaticresources/v05/images/barcode-myjio-new.png"
+                      alt="qrreader"
+                      className="align-self-center rounded-2xl mt-3"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-0 col-md-0 col-lg-2 col-xl-2"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
