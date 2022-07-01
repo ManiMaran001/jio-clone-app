@@ -3,13 +3,9 @@ import "./Home.scss";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { MdPlayCircleOutline } from "react-icons/md";
+import MultiCarousel from "./MultiCarousel";
+import DiscoverCardComponent from "./DiscoverCardComponent";
 import {
-  Box,
-  Typography,
-  Card,
-  CardActions,
-  CardContent,
-  Button,
   Grid,
 } from "@mui/material";
 import Recharge from "../../../Assert/svg/recharge.svg";
@@ -586,46 +582,10 @@ const HomePage = () => {
           </div> */}
         </div>
       </div>
-      <div className="mt-4">
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          centerMode={true}
-          infinite={true}
-          arrows={false}
-          containerClass="carousel--container"
-        >
-          {multiCarouselData?.map((value) => {
-            return (
-              <div className={`card ${value.background} rounded-2xl`}>
-                <div className="card-body">
-                  <div className="d-flex">
-                    <div className="card-content w-75">
-                      <h5 className="card-title text-2xl leading-6 tracking-tight font-black">
-                        {value.title}
-                      </h5>
-                      <p className="card-text text-md font-medium">
-                        {value.description}
-                      </p>
-                    </div>
-                    <div className="">
-                      <img src={value.svgImg} alt="jiosaavn" className="w-20" />
-                    </div>
-                  </div>
-                  <button className="btn--box d-flex justify-content-start">
-                    {value.check}
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </Carousel>
-        <Grid container className="center--plan mt-4" justifyContent={"center"}>
-          <Grid item xs={8} sm={2} md={1.5} lg={1.5}>
-            <div className="chip--container">View all apps</div>
-          </Grid>
-        </Grid>
-      </div>
+      <MultiCarousel responsive={responsive} multiCarouselData={multiCarouselData}/>
+
+
+    
 
       <div className="mt-4 container--spacing main--container">
         <div className="container--box">
@@ -751,8 +711,8 @@ const HomePage = () => {
       </div>
 
       <div className="container--spacing">
-        <div className="relative">
-          <img src={superDesk} alt="superDesk" className="rounded-2xl" />
+        <div className="">
+          <img src={superDesk} alt="superDesk" className="rounded-2xl w-100" />
         </div>
         <div className=""></div>
       </div>
@@ -770,41 +730,7 @@ const HomePage = () => {
           </div>
         </div>
         </div>
-        <div className="bg-primary-gray-20 container--spacing--discover">
-        <div className="mt-8 mb-5 grid grid-cols-1 grid-rows-1 sm:grid-cols-1 sm:grid-rows-1 md:grid-cols-2 md:grid-rows-1 lg:grid-cols-3 lg:grid-rows-1 gap-4">
-          {AppsData.map((item) => {
-            return (
-              <div
-                className="max-w-lg md:max-w-sm lg:max-w-sm xl:max-w-sm rounded-default overflow-hidden  shadow-md p-0"
-                key={item.id}
-              >
-                <img
-                  className={`rounded-l-default rounded-r-default w-100`}
-                  src={item.HeroImg}
-                  alt="jio app"
-                />
-                <div className="p-3">
-                  <div className="w-full">
-                    <p className="font-black text-lg  font-extrabold leading-4 tracking-tighter">
-                      {item.appName}
-                    </p>
-                  </div>
-                  <p className="text-gray-600 text-base tracking-tighter leading-6 mt-2">
-                    {item.description}
-                  </p>
-                  <div className="mt-3">
-                    <div className="hover:bg-brand-light rounded-default">
-                      <p className="text-primary-blue font-bold text-base tracking-normal">
-                        {item.text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <DiscoverCardComponent AppsData={AppsData}/>
 
       <div className="container--spacing">
         <div className="image-container rounded-2xl mt-5">

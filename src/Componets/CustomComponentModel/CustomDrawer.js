@@ -55,7 +55,7 @@ const CustomDrawer = (props) => {
                         item?.MiniList.map((val, index) => {
                           return (
                             <React.Fragment key={index}>
-                              <Typography sx={{ mb: 2 }}>{val.list}</Typography>
+                              <Typography onClick={props.closeDrawer} sx={{ mb: 2 }}>{val.list}</Typography>
                             </React.Fragment>
                           )
                         })
