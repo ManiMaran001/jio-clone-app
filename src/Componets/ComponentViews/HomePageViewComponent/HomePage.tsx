@@ -733,7 +733,7 @@ const HomePage = () => {
       <DiscoverCardComponent AppsData={AppsData}/>
 
       <div className="container--spacing">
-        <div className="image-container rounded-2xl mt-5">
+        <div className="image-container rounded-2xl mt-5 h-100">
           <div className="carousel--box">
             <div className="row">
               <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
