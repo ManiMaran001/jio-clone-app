@@ -32,7 +32,8 @@ module.exports = {
                'danger': '#e3342f',
                "primary-grey":"rgba(255, 255, 255, 0.78)",
                "primary-80-grey":"rgba(0, 0, 0, 0.65)",
-               "primary-inverse":"#061951"
+               "primary-inverse":"#061951",
+               "primary-dim":"#7d7d7d"
       },
       borderRadius: {
         'none': '0',

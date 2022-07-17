@@ -60,7 +60,7 @@ const Header = (props: any) => {
   //   window.addEventListener("resize", resize());
   // }, [])
   const handleSearchModal = () => {
-    setSearchModal(!openSearchModal)
+    setSearchModal(false)
   }
   const headerOpenModal = () => {
     setOpenModal(true)

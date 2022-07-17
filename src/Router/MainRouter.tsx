@@ -17,7 +17,6 @@ const MainRouter = () => {
                     )
                 })
             }
-
             <footer>
                 <FooterSection />
             </footer>
